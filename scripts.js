@@ -2,11 +2,11 @@ var chapters = {
     'prologo': [{ text: 'Introducción', link: '/prologo/introduccion.html' }],
     'capitulo1': [
         { text: 'Empecemos I', link: '/Capitulo 1/EmpecemosI.html' }, 
-        { text: 'Empecemos II', link: 'EmpecemosII.html' }, 
-        { text: 'Empecemos III', link: 'EmpecemosIII.html' }, 
-        { text: 'Origen de la filosofia: Maravilla', link: 'origen.html' }, 
-        { text: 'Maravilla: Caos y Cosmos', link: 'maravilla.html' }, 
-        { text: 'El Origen De La Filosofia: Los Griegos y Nosotros', link: 'griegos.html' }],
+        { text: 'Empecemos II', link: '/Capitulo 1/EmpecemosII.html' }, 
+        { text: 'Empecemos III', link: '/Capitulo 1/EmpecemosIII.html' }, 
+        { text: 'Origen de la filosofia: Maravilla', link: '/capitulo 1/origen.html' }, 
+        { text: 'Maravilla: Caos y Cosmos', link: '/Capitulo 1/maravilla.html' }, 
+        { text: 'El Origen De La Filosofia: Los Griegos y Nosotros', link: '/Capitulo 1/griegos.html' }],
     'capitulo2': [
         { text: 'Pensamiento Griego: Visión General', link: 'PensamientoGriegoVisionGeneral.html' },
         { text: 'Cultura Griega', link: 'CulturaGriega.html' },
