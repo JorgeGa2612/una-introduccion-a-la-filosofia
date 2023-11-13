@@ -1,0 +1,150 @@
+/* Reset básico para estilos del navegador y establecimiento de estilos base */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+/* Estilos para el logo */
+header .logo img {
+    max-height: 70px;
+}
+
+/* Estilos para el título para que se coloque al lado del logo */
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Estilos para la navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a, nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Estilos para resaltar el botón de login */
+nav ul li:last-child {
+    background-color: #5C5C5C;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #4C4C4C;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    bottom: -8px;
+}
+
+@media (min-width: 945px) {
+    .menu-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo, header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+}
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Use 100% of the viewport height */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2, h3 {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+    /* Add any necessary padding or styles */
+  }
+  
+  embed {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    flex-grow: 1;
+    width: 100%; /* Fill the width */
+    height: calc(100% - 60px); /* Adjust the 60px to account for the headers' height */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+  }
+  

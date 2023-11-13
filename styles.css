@@ -1,0 +1,290 @@
+    /* Reset básico para estilos del navegador y establecimiento de estilos base */
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* This ensures padding is included in total width/height */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between; /* Space between the logo and nav */
+    display: fixed;
+}
+
+/* Estilos para el logo */
+header .logo img {
+    max-height: 70px;
+}
+
+/* Estilos para el título para que se coloque al lado del logo */
+header h1 {
+    margin: 0;
+    flex-grow: 1; /* Allows the title to take up available space */
+    text-align: left; /* Aligns the title text to the left */
+    padding-left: 10px;
+}
+
+
+/* Estilos para la navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegúrate de que la lista ocupe todo el ancho disponible */
+    justify-content: space-between; /* Esto distribuirá el espacio uniformemente */
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px; /* Añade más relleno */
+    display: block; /* Hacer que el enlace llene el li */
+    /* Agrega flex-grow: 1 a todos los li para que todos crezcan uniformemente */
+}
+
+/* Estilos para resaltar el botón de login */
+nav ul li:last-child {
+    background-color: #5C5C5C;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+nav ul li:last-child a {
+    color: white;
+    padding: 10px 20px; /* Añade más relleno */
+    display: block; /* Hacer que el enlace llene el li */
+}
+
+nav ul li:last-child a:hover {
+    background-color: #4C4C4C;
+}
+
+/* Resto de estilos */
+
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Asegúrate de que no haya relleno adicional */
+}
+
+.menu-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  bottom: -8px;
+}
+
+/* Estilos para la cuadrícula de capítulos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea cuatro columnas con igual ancho */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin: auto; /* Centra el contenedor en la página si no ocupa el ancho completo */
+    max-width: 1200px;
+}
+
+
+.chapter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    font-size: 1.5em;
+    cursor: pointer; /* Indicates the buttons are clickable */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: auto; /* Asegura que el contenido del modal esté centrado */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+.modal-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Esto centrará el contenido del header horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado incluso si flex no funciona */
+}
+
+.modal-header h2 {
+    flex: 1; /* Permite que el título crezca y ocupe el espacio disponible */
+}
+
+.close-button {
+    margin-left: auto; /* Empuja el botón de cerrar a la derecha */
+    color: #aaa;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body ul {
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 0; /* Elimina margen por defecto */
+}
+
+.modal-body li a {
+    text-decoration: none;
+    color: #000;
+    display: block; /* Hace que el enlace llene el li para mayor área clickeable */
+    padding: 10px 0; /* Espaciado para cada enlace */
+}
+
+.modal-body li a:hover {
+    text-decoration: underline;
+}
+
+
+.author-info {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Fondo claro para la sección */
+    padding: 20px;
+    font-size: 22px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para destacar */
+    margin-bottom: 20px; /* Espaciado debajo de la sección del autor */
+}
+
+.author-image {
+    max-width: 100px; /* Ajusta esto según el tamaño deseado */
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin-right: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.author-text {
+    flex: 1;
+    padding: 0 20px; /* Agrega padding si es necesario */
+}
+
+.author-text p {
+    margin: 0;
+    /* Agrega más estilos si es necesario */
+}
+
+/* Ajusta la posición de los capítulos para que no se solapen con la info del autor */
+main {
+    padding-top: 20px; /* Espacio adicional en la parte superior si es necesario */
+}
+
+@media (min-width: 945px) {
+    .menu-button {
+        display: none; /* Oculta el botón de menú */
+    }
+
+    nav ul {
+        display: flex; /* Muestra la navegación en línea */
+        justify-content: space-between;
+        /* Resto de estilos de tu navegación */
+    }
+
+    /* Tus otros estilos para elementos de navegación aquí */
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Ajustes para responsividad en dispositivos móviles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo, header nav {
+        width: 100%; /* Ensure full width for smaller screens */
+    }
+
+    header nav ul {
+        justify-content: center; /* Center the navigation links */
+    }
+}
+
