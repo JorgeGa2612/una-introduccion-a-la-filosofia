@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción</title>
+    <link rel="icon" href="/scr/logo.png" type="image/png">
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+    </style>
+
+    <div class="contenedor">
+        <h1>Página en Construcción</h1>
+        <img src="/scr/error.png">
+        <p>Estamos trabajando en mejorar nuestra página web. ¡Regresa pronto para ver nuestras actualizaciones!</p>
+    </div>
+
+    <script src="/auth.js"></script>
+    <script src="/lectura.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const capituloId = 'capitulo6';
+            const subtemaId = 'subtema6';
+            actualizarEstadoSubtema(capituloId, subtemaId);
+        });
+    </script>
+</body>
+
+
+</html>

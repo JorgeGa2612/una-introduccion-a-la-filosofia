@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una Introducción A La Filosofía</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="/scr/logo.png" type="image/png">
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+      <a href="index.html"> 
+      <img src="scr/logo.png" alt="Logo">
+      </a> 
+    </div>
+    <h1>Una Introducción A La Filosofía</h1>
+    <button class="menu-button">
+        <span class="menu-icon"></span>
+    </button>
+    <nav>
+        <ul>
+            <li><a href="agradecimiento/agradecimiento.html">Agradecimientos</a></li>
+            <li><a href="bibliografia/bibliografia.html">Bibliografía</a></li>
+            <li id="authLinkContainer"><a href="login/login.html">Log In</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<aside class="author-info">
+    <img src="scr/socrates.jpeg" alt="Autor" class="author-image">
+    <div class="author-text">
+      <p>El Profesor Philip A. Pecorino ofrece una fantástica visión general del pensamiento filosófico en este libro de texto en línea que abarca desde el pensamiento griego clásico hasta las filosofías sociales, políticas y éticas contemporáneas. Sus "Enlaces a Obras de Referencia" brindan al lector amplios recursos para continuar su propio estudio de los temas que más le interesan.</p>
+    </div>
+</aside>
+
+
+<!-- Resto del HTML -->
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>SECCIONES</h2>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-list">
+          <!-- Los subtemas se añadirán aquí dinámicamente -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+<main>
+    <div class="grid-container">
+        <button class="chapter" onclick="openModal('prologo')">Prólogo</button>
+        <button class="chapter" onclick="openModal('capitulo1')">Capítulo 1</button>
+        <button class="chapter" onclick="openModal('capitulo2')">Capítulo 2</button>
+        <button class="chapter" onclick="openModal('capitulo3')">Capítulo 3</button>
+        <button class="chapter" onclick="openModal('capitulo4')">Capítulo 4</button>
+        <button class="chapter" onclick="openModal('capitulo5')">Capítulo 5</button>
+        <button class="chapter" onclick="openModal('capitulo6')">Capítulo 6</button>
+        <button class="chapter" onclick="openModal('capitulo7')">Capítulo 7</button>
+        <button class="chapter" onclick="openModal('capitulo8')">Capítulo 8</button>
+        <button class="chapter" onclick="openModal('capitulo9')">Capítulo 9</button>
+        <button class="chapter" onclick="openModal('capitulo10')">Capítulo 10</button>
+        <button class="chapter" onclick="openModal('capitulo11')">Capítulo 11</button>
+        <button class="chapter" onclick="openModal('capitulo12')">Capítulo 12</button>
+    </div>
+
+</main>
+
+<script src="auth.js"></script>
+<script src="scripts.js"></script>
+<script src="lectura.js"></script>
+
+</body>
+</html>

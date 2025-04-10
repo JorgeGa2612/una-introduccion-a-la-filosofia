@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.login-container {
+    position: absolute;
+    top: 45%; /* Adjust this value to move the container down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Fixed width or as per your design */
+    text-align: center;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 90px; /* Increase logo size as needed */
+    margin-right: 10px; /* Add space between logo and title */
+}
+
+h1 {
+    color: #333;
+    font-size: 24px; /* Adjust if necessary */
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px; /* Increase padding for larger input */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+button {
+    width: 100%;
+    padding: 15px; /* Larger padding for a bigger button */
+    margin: 10px 0;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for better readability */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#register {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#register:hover {
+    background-color: #dcdcdc;
+}
