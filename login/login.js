@@ -24,7 +24,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             // Inicio de sesión exitoso
             console.log("Inicio de sesión exitoso con usuario:", userCredential.user);
             // Aquí puedes redirigir al usuario a su página de perfil o a la página principal
-            window.location.href = '/index.html'; // Reemplaza esto con la URL que desees
+            window.location.href = '../index.html'; // Reemplaza esto con la URL que desees
         })
         .catch((error) => {
             // Manejo de errores, como credenciales incorrectas o problemas de conexión

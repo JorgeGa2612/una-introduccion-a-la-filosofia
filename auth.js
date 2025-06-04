@@ -30,6 +30,6 @@ window.db = db;
         });
     } else {
         // No hay usuario autenticado
-        authLinkContainer.innerHTML = '<a href="/login/login.html">Log In</a>';
+        authLinkContainer.innerHTML = '<a href="./login/login.html">Log In</a>';
     }
   });
