@@ -171,7 +171,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
         .then(() => {
             console.log("Usuario registrado y progreso inicializado");
             // Redirigir al usuario o actualizar la interfaz de usuario aquí
-            window.location.href = '/login/login.html'; // Cambia esta línea por la URL de tu página de destino
+            window.location.href = '../index.html'; // Cambia esta línea por la URL de tu página de destino
         })
         .catch((error) => {
             console.error("Error en el registro o al guardar en Firestore: ", error);
