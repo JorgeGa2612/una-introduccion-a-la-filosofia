@@ -1,6 +1,6 @@
 
 var chapters = {
-    'prologo': [{ text: 'Introducción', link: '/prologo/introduccion.html' }],
+    'prologo': [{ text: 'Introducción', link: '../prologo/introduccion.html' }],
     'capitulo1': [
         { text: 'Empecemos I', link: '/Capitulo 1/EmpecemosI.html' }, 
         { text: 'Empecemos II', link: '/Capitulo 1/EmpecemosII.html' }, 
